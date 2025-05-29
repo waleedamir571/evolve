@@ -25,7 +25,8 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-	 
+	 <script src="vendor/fullcalendar/js/fullcalendar.min.js"></script>
+    <script src="js/plugins-init/fullcalendar-init.js"></script>
     <script src="vendor/global/global.min.js"></script>
 	 <!-- <script src="vendor/morris/raphael-min.js"></script>
     <script src="vendor/morris/morris.min.js"></script>
@@ -37,6 +38,11 @@
 	<!-- Chart piety plugin files -->
     <script src="vendor/peity/jquery.peity.min.js"></script>
 	 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+     <script src="vendor/jqueryui/js/jquery-ui.min.js"></script>
+    <script src="vendor/moment/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+
 	<!-- Dashboard 1 -->
 	<script src="js/dashboard/dashboard-1.js"></script>
    

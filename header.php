@@ -24,9 +24,11 @@
 	<!-- Vectormap -->
     <!-- <link href="vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet"> -->
     <link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-	
+	  <link href="vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+	   <!-- <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.css" rel="stylesheet" /> -->
+
 	<link href="vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
-	<link href="../../cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
+	<!-- <link href="../../cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet"> -->
 	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -739,7 +741,7 @@
                     </li>
                    
                       
-                    <li class=""><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    <li class=""><a class="has-arrow ai-icon" href="app-calender.php" aria-expanded="false">
 								<img class="mb5" src="images/home/calener.svg" alt="">
 							<span class="nav-text">My Calendar</span>
 						</a>
