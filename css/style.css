@@ -7306,7 +7306,7 @@ fieldset:disabled .btn {
 }
 
 .toggle-switch input:checked+.slider {
-  background-color: #0D1A73;
+  background-color: #0C213F;
 }
 
 .toggle-switch input:checked+.slider:before {
