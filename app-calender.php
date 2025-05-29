@@ -1,11 +1,4 @@
 <?php include 'header.php'; ?>
-<!--**********************************
-            Sidebar end
-        ***********************************-->
-
-<!--**********************************
-            Content body start
-        ***********************************-->
 
 <style>
     .header-left {
@@ -234,29 +227,30 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
 
-   .event-title {
-    font-weight: 600;
-    margin-bottom: 2px;
-    color: #FFF;
-  
-    font-size: 15.194px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: capitalize;
-}
+    .event-title {
+        font-weight: 600;
+        margin-bottom: 2px;
+        color: #FFF;
 
-   .event-time {
-    /* opacity: 0.9; */
-    margin-bottom: 6px;
-    font-size: 0.675rem;
-    color: #FFF;
-    font-size: 12.155px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
-}
+        font-size: 15.194px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    .event-time {
+        /* opacity: 0.9; */
+        margin-bottom: 6px;
+        font-size: 0.675rem;
+        color: #FFF;
+        font-size: 12.155px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
     .event-attendees {
         display: flex;
         align-items: center;
@@ -264,10 +258,10 @@
     }
 
     .avatar-group {
-    display: flex;
-    margin-right: 8px;
-    padding-top: 35px;
-}
+        display: flex;
+        margin-right: 8px;
+        padding-top: 35px;
+    }
 
     .avatar {
         width: 20px;
@@ -434,7 +428,7 @@
                             d="M22 6.9V11.1C22 14.6 20.6 16 17.1 16H16V12.9C16 9.4 14.6 8 11.1 8H8V6.9C8 3.4 9.4 2 12.9 2H17.1C20.6 2 22 3.4 22 6.9Z"
                             stroke="#47B2B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg></p>
-                
+
             </div>
 
             <div class="modal-footer">
@@ -496,7 +490,7 @@
                     <input type="date" placeholder="Select Date" value="Wednesday, Jul 12 2025">
                 </div>
 
-                
+
                 <br>
                 <div class="toggle-group">
                     <label>Only Once</label>
@@ -508,10 +502,10 @@
 
                 <div class="toggle-group">
                     <label>Select Available Days</label>
-                       <div class="repeating-label">🔁 Repeating</div>
+                    <div class="repeating-label">🔁 Repeating</div>
                 </div>
 
-            
+
 
                 <div class="day-buttons">
                     <button class="selected">Mon</button>
@@ -535,172 +529,172 @@
 </div>
 
 <script>
-        const weekDays = ['MON', 'TUE', 'WED', 'THU', 'FRI'];
-        const weekDaysFull = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-        const months = [
-            'January', 'February', 'March', 'April', 'May', 'June',
-            'July', 'August', 'September', 'October', 'November', 'December'
-        ];
+    const weekDays = ['MON', 'TUE', 'WED', 'THU', 'FRI'];
+    const weekDaysFull = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+    const months = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+    ];
 
-        let currentWeekStart = new Date(2024, 2, 18); // March 18, 2024 (Monday)
+    let currentWeekStart = new Date(2024, 2, 18); // March 18, 2024 (Monday)
 
-        const events = [
-            {
-                id: 1,
-                title: 'Standup',
-                day: 0, // Monday
-                startTime: 9,
-                duration: 2,
-                attendees: ['JD', 'JS', 'MJ'],
-                color: 'event-blue'
-            },
-            {
-                id: 2,
-                title: 'Standup',
-                day: 1, // Tuesday
-                startTime: 9,
-                duration: 2,
-                attendees: ['JD', 'JS', 'SW'],
-                color: 'event-slate'
-            },
-            {
-                id: 3,
-                title: 'Standup',
-                day: 2, // Wednesday
-                startTime: 9,
-                duration: 2,
-                attendees: ['JS', 'MJ', 'SW', 'TB'],
-                color: 'event-blue'
-            },
-            {
-                id: 4,
-                title: 'Standup',
-                day: 3, // Thursday
-                startTime: 9,
-                duration: 2,
-                attendees: ['JD', 'MJ', 'TB'],
-                color: 'event-slate'
-            },
-            {
-                id: 5,
-                title: 'Standup',
-                day: 2, // Wednesday
-                startTime: 13,
-                duration: 1.5,
-                attendees: ['JD', 'JS'],
-                color: 'event-gray'
-            }
-        ];
-
-        function updateCurrentTime() {
-            const now = new Date();
-            const hours = now.getHours().toString().padStart(2, '0');
-            const minutes = now.getMinutes().toString().padStart(2, '0');
-            document.getElementById('currentTime').textContent = `${hours}:${minutes}`;
+    const events = [
+        {
+            id: 1,
+            title: 'Standup',
+            day: 0, // Monday
+            startTime: 9,
+            duration: 2,
+            attendees: ['JD', 'JS', 'MJ'],
+            color: 'event-blue'
+        },
+        {
+            id: 2,
+            title: 'Standup',
+            day: 1, // Tuesday
+            startTime: 9,
+            duration: 2,
+            attendees: ['JD', 'JS', 'SW'],
+            color: 'event-slate'
+        },
+        {
+            id: 3,
+            title: 'Standup',
+            day: 2, // Wednesday
+            startTime: 9,
+            duration: 2,
+            attendees: ['JS', 'MJ', 'SW', 'TB'],
+            color: 'event-blue'
+        },
+        {
+            id: 4,
+            title: 'Standup',
+            day: 3, // Thursday
+            startTime: 9,
+            duration: 2,
+            attendees: ['JD', 'MJ', 'TB'],
+            color: 'event-slate'
+        },
+        {
+            id: 5,
+            title: 'Standup',
+            day: 2, // Wednesday
+            startTime: 13,
+            duration: 1.5,
+            attendees: ['JD', 'JS'],
+            color: 'event-gray'
         }
+    ];
 
-        function getWeekDates(startDate) {
-            const dates = [];
-            for (let i = 0; i < 5; i++) {
-                const date = new Date(startDate);
-                date.setDate(startDate.getDate() + i);
-                dates.push(date);
-            }
-            return dates;
+    function updateCurrentTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, '0');
+        const minutes = now.getMinutes().toString().padStart(2, '0');
+        document.getElementById('currentTime').textContent = `${hours}:${minutes}`;
+    }
+
+    function getWeekDates(startDate) {
+        const dates = [];
+        for (let i = 0; i < 5; i++) {
+            const date = new Date(startDate);
+            date.setDate(startDate.getDate() + i);
+            dates.push(date);
         }
+        return dates;
+    }
 
-        function openEventModal(event) {
-            document.getElementById('modalEventTitle').textContent = event.title;
-            
-            const endHour = event.startTime + event.duration;
-            const endHourDisplay = Math.floor(endHour);
-            const endMinutes = Math.round((endHour % 1) * 60);
-            const endTime = `${endHourDisplay.toString().padStart(2, '0')}:${endMinutes.toString().padStart(2, '0')}`;
-            
-            document.getElementById('modalEventTime').textContent = 
-                `${event.startTime.toString().padStart(2, '0')}:00 - ${endTime}`;
-            
-            document.getElementById('modalEventDay').textContent = weekDaysFull[event.day];
-            
-            const attendeesContainer = document.getElementById('modalEventAttendees');
-            attendeesContainer.innerHTML = '';
-            event.attendees.forEach(attendee => {
-                const chip = document.createElement('span');
-                chip.className = 'attendee-chip';
-                chip.textContent = attendee;
-                attendeesContainer.appendChild(chip);
-            });
-        }
+    function openEventModal(event) {
+        document.getElementById('modalEventTitle').textContent = event.title;
 
-        function renderCalendar() {
-            const daysGrid = document.getElementById('daysGrid');
-            const weekDates = getWeekDates(currentWeekStart);
-            
-            // Update header date
-            const firstDate = weekDates[0];
-            const dateText = `${firstDate.toLocaleDateString('en-US', { weekday: 'long', day: 'numeric', month: 'long' })}`;
-            document.getElementById('currentDate').textContent = dateText;
+        const endHour = event.startTime + event.duration;
+        const endHourDisplay = Math.floor(endHour);
+        const endMinutes = Math.round((endHour % 1) * 60);
+        const endTime = `${endHourDisplay.toString().padStart(2, '0')}:${endMinutes.toString().padStart(2, '0')}`;
 
-            daysGrid.innerHTML = '';
+        document.getElementById('modalEventTime').textContent =
+            `${event.startTime.toString().padStart(2, '0')}:00 - ${endTime}`;
 
-            weekDates.forEach((date, dayIndex) => {
-                const dayColumn = document.createElement('div');
-                dayColumn.className = 'day-column';
+        document.getElementById('modalEventDay').textContent = weekDaysFull[event.day];
 
-                // Day header
-                const dayHeader = document.createElement('div');
-                dayHeader.className = 'day-header';
-                dayHeader.innerHTML = `
+        const attendeesContainer = document.getElementById('modalEventAttendees');
+        attendeesContainer.innerHTML = '';
+        event.attendees.forEach(attendee => {
+            const chip = document.createElement('span');
+            chip.className = 'attendee-chip';
+            chip.textContent = attendee;
+            attendeesContainer.appendChild(chip);
+        });
+    }
+
+    function renderCalendar() {
+        const daysGrid = document.getElementById('daysGrid');
+        const weekDates = getWeekDates(currentWeekStart);
+
+        // Update header date
+        const firstDate = weekDates[0];
+        const dateText = `${firstDate.toLocaleDateString('en-US', { weekday: 'long', day: 'numeric', month: 'long' })}`;
+        document.getElementById('currentDate').textContent = dateText;
+
+        daysGrid.innerHTML = '';
+
+        weekDates.forEach((date, dayIndex) => {
+            const dayColumn = document.createElement('div');
+            dayColumn.className = 'day-column';
+
+            // Day header
+            const dayHeader = document.createElement('div');
+            dayHeader.className = 'day-header';
+            dayHeader.innerHTML = `
                     <div class="day-name">${weekDays[dayIndex]}</div>
                     <div class="day-number">${date.getDate()}</div>
                 `;
 
-                // Day content with time slots
-                const dayContent = document.createElement('div');
-                dayContent.className = 'day-content';
+            // Day content with time slots
+            const dayContent = document.createElement('div');
+            dayContent.className = 'day-content';
 
-                // Create hour slots
-                for (let hour = 7; hour <= 16; hour++) {
-                    const hourSlot = document.createElement('div');
-                    hourSlot.className = 'hour-slot';
-                    dayContent.appendChild(hourSlot);
-                }
+            // Create hour slots
+            for (let hour = 7; hour <= 16; hour++) {
+                const hourSlot = document.createElement('div');
+                hourSlot.className = 'hour-slot';
+                dayContent.appendChild(hourSlot);
+            }
 
-                // Add current time line (only for Wednesday)
-                if (dayIndex === 2) {
-                    const timeLine = document.createElement('div');
-                    timeLine.className = 'current-time-line';
-                    dayContent.appendChild(timeLine);
-                }
+            // Add current time line (only for Wednesday)
+            if (dayIndex === 2) {
+                const timeLine = document.createElement('div');
+                timeLine.className = 'current-time-line';
+                dayContent.appendChild(timeLine);
+            }
 
-                // Add events for this day
-                const dayEvents = events.filter(event => event.day === dayIndex);
-                dayEvents.forEach(event => {
-                    const eventElement = document.createElement('div');
-                    eventElement.className = `event ${event.color}`;
-                    
-                    // Add modal trigger attributes
-                    eventElement.setAttribute('data-bs-toggle', 'modal');
-                    eventElement.setAttribute('data-bs-target', '#basicModal2');
-                    
-                    const topPosition = (event.startTime - 7) * 64;
-                    const height = Math.max(event.duration * 64, 60); // Minimum height of 60px
-                    
-                    eventElement.style.top = `${topPosition}px`;
-                    eventElement.style.height = `${height}px`;
+            // Add events for this day
+            const dayEvents = events.filter(event => event.day === dayIndex);
+            dayEvents.forEach(event => {
+                const eventElement = document.createElement('div');
+                eventElement.className = `event ${event.color}`;
 
-                    const attendeeAvatars = event.attendees.slice(0, 3).map(initial => 
-                        `<div class="avatar">${initial}</div>`
-                    ).join('');
+                // Add modal trigger attributes
+                eventElement.setAttribute('data-bs-toggle', 'modal');
+                eventElement.setAttribute('data-bs-target', '#basicModal2');
 
-                    const moreCount = event.attendees.length > 3 ? `<span class="more-count">+${event.attendees.length - 3} More</span>` : '';
+                const topPosition = (event.startTime - 7) * 64;
+                const height = Math.max(event.duration * 64, 60); // Minimum height of 60px
 
-                    const endHour = event.startTime + event.duration;
-                    const endHourDisplay = Math.floor(endHour);
-                    const endMinutes = Math.round((endHour % 1) * 60);
-                    const endTime = `${endHourDisplay.toString().padStart(2, '0')}:${endMinutes.toString().padStart(2, '0')}`;
+                eventElement.style.top = `${topPosition}px`;
+                eventElement.style.height = `${height}px`;
 
-                    eventElement.innerHTML = `
+                const attendeeAvatars = event.attendees.slice(0, 3).map(initial =>
+                    `<div class="avatar">${initial}</div>`
+                ).join('');
+
+                const moreCount = event.attendees.length > 3 ? `<span class="more-count">+${event.attendees.length - 3} More</span>` : '';
+
+                const endHour = event.startTime + event.duration;
+                const endHourDisplay = Math.floor(endHour);
+                const endMinutes = Math.round((endHour % 1) * 60);
+                const endTime = `${endHourDisplay.toString().padStart(2, '0')}:${endMinutes.toString().padStart(2, '0')}`;
+
+                eventElement.innerHTML = `
                         <div class="event-title">${event.title}</div>
                         <div class="event-time">${event.startTime.toString().padStart(2, '0')}:00 - ${endTime}</div>
                         <div class="event-attendees">
@@ -709,36 +703,34 @@
                         </div>
                     `;
 
-                    // Add click event listener to populate modal
-                    eventElement.addEventListener('click', () => {
-                        openEventModal(event);
-                    });
-
-                    dayContent.appendChild(eventElement);
+                // Add click event listener to populate modal
+                eventElement.addEventListener('click', () => {
+                    openEventModal(event);
                 });
 
-                dayColumn.appendChild(dayHeader);
-                dayColumn.appendChild(dayContent);
-                daysGrid.appendChild(dayColumn);
+                dayContent.appendChild(eventElement);
             });
-        }
 
-        function navigateWeek(direction) {
-            currentWeekStart.setDate(currentWeekStart.getDate() + (direction * 7));
-            renderCalendar();
-        }
+            dayColumn.appendChild(dayHeader);
+            dayColumn.appendChild(dayContent);
+            daysGrid.appendChild(dayColumn);
+        });
+    }
 
-        // Initialize calendar
+    function navigateWeek(direction) {
+        currentWeekStart.setDate(currentWeekStart.getDate() + (direction * 7));
         renderCalendar();
-        updateCurrentTime();
+    }
 
-        // Update time every minute
-        setInterval(updateCurrentTime, 60000);
-    </script>
+    // Initialize calendar
+    renderCalendar();
+    updateCurrentTime();
+
+    // Update time every minute
+    setInterval(updateCurrentTime, 60000);
+</script>
 
 <?php include 'footer.php'; ?>
 
-<script src="vendor/fullcalendar/js/fullcalendar.min.js"></script>
-<script src="js/plugins-init/fullcalendar-init.js"></script>
-<!-- <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet" />
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script> -->
+<!-- <script src="vendor/fullcalendar/js/fullcalendar.min.js"></script>
+<script src="js/plugins-init/fullcalendar-init.js"></script> -->
