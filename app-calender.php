@@ -35,7 +35,7 @@
         font-weight: 600;
         color: #1f2937;
         margin: 0 1rem;
-        min-width: 250px;
+        min-width: 200px;
     }
 
     .date-indicators {
@@ -182,7 +182,7 @@
         position: relative;
     }
 
-    .current-time-line {
+    /* .current-time-line {
         position: absolute;
         left: 0;
         right: 0;
@@ -201,7 +201,7 @@
         height: 8px;
         background: #3b82f6;
         border-radius: 50%;
-    }
+    } */
 
     .event {
         position: absolute;
@@ -253,7 +253,7 @@
 
     .event-attendees {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         gap: 4px;
     }
 
